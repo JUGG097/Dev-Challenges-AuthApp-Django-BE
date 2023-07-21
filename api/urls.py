@@ -10,7 +10,7 @@ urlpatterns = [
     path(
         "auth/refreshToken",
         AuthView.as_view({"post": "refresh_token"}),
-        name="edit_user_profile",
+        name="refresh_token",
     ),
     path("user/profile", UserView.as_view({"get": "get"}), name="user_profile"),
     path(
